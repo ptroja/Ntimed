@@ -101,7 +101,6 @@ kt_setfreq(struct ocx *ocx, double frequency)
 static enum todo_e __match_proto__(todo_f)
 kt_ticker(struct ocx *ocx, struct todolist *tdl, void *priv)
 {
-
 	(void)ocx;
 	AN(tdl);
 	AZ(priv);
@@ -238,7 +237,6 @@ kt_sleep(double dur)
 void
 Time_Unix(struct todolist *tdl)
 {
-
 	AN(tdl);
 	TB_Step = kt_step;
 	TB_Adjust = kt_adjust;
@@ -256,7 +254,6 @@ Time_Unix(struct todolist *tdl)
 void
 Time_Unix_Passive(void)
 {
-
 	TB_Sleep = kt_sleep;
 	TB_Now = kt_now;
 }

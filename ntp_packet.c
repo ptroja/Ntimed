@@ -76,7 +76,6 @@
 static void
 ntp64_2ts(struct timestamp *ts, const uint8_t *ptr)
 {
-
 	INIT_OBJ(ts, TIMESTAMP_MAGIC);
 	ts->sec = Be32dec(ptr) - NTP_UNIX;
 	ts->frac = (uint64_t)Be32dec(ptr + 4) << 32ULL;
@@ -85,7 +84,6 @@ ntp64_2ts(struct timestamp *ts, const uint8_t *ptr)
 static void
 ntp32_2ts(struct timestamp *ts, const uint8_t *ptr)
 {
-
 	INIT_OBJ(ts, TIMESTAMP_MAGIC);
 	ts->sec = Be16dec(ptr);
 	ts->frac = (uint64_t)Be16dec(ptr + 2) << 48ULL;

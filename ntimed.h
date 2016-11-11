@@ -138,7 +138,6 @@ void TS_RunTest(struct ocx *ocx);
 
 /* todo.c -- todo-list scheduler **************************************/
 
-
 enum todo_e {
 	TODO_INTR	= -2,	// Signal received
 	TODO_FAIL	= -1,	// Break out of TODO_Run()

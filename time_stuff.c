@@ -67,7 +67,6 @@ ts_fixstorage(struct timestamp *storage)
 struct timestamp *
 TS_Nanosec(struct timestamp *storage, int64_t sec, int64_t nsec)
 {
-
 	storage = ts_fixstorage(storage);
 
 	assert(sec >= 0);
@@ -83,7 +82,6 @@ TS_Nanosec(struct timestamp *storage, int64_t sec, int64_t nsec)
 struct timestamp *
 TS_Double(struct timestamp *storage, double d)
 {
-
 	assert(d >= 0.0);
 	storage = ts_fixstorage(storage);
 
@@ -261,5 +259,3 @@ TS_RunTest(struct ocx *ocx)
 	Debug(ocx, "TS_RunTest: %d failures\n", nf);
 	AZ(nf);
 }
-
-
