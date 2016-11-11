@@ -26,12 +26,12 @@
  * Source Combiner based on delta-pdfs
  * ===================================
  *
- * The basic principle here is that sources gives us four values:
- *   - The highest low value were the probability is zero.
- *   - The lowest high value were the probability is zero.
+ * The basic principle here is that sources give us four values:
+ *   - The highest low value where the probability is zero
+ *   - The lowest high value where the probability is zero
  *   - The most probable value
  *   - The relative trust in that value [0...1]
- * Together this defines a triangular probability density function.
+ * Together these define a triangular probability density function (pdf).
  *
  * The combiner adds all these pdfs' together weighted by trust
  * and finds the highest probability which sports a quorum.

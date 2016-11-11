@@ -27,7 +27,7 @@
  * =============
  *
  * Implement the timebase functions on top of a modern UNIX kernel which
- * has the some version of the Mills/Kamp kernel PLL code and either
+ * has some version of the Mills/Kamp kernel PLL code and either
  * [gs]ettimeofday(2) or better: clock_[gs]ettime(2) API.
  *
  */
